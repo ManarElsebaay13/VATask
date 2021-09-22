@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">VATask</string>
+    <string name="cancel">cancel</string>
+    <string name="ok">ok</string>
+    <string name="please_wait">please wait</string>
+    <string name="location_required">Location Required</string>
+    <string name="please_open_location_or_wait_to_get_your_location">Please wait to get location </string>
+    <string name="first_number">first number</string>
+    <string name="second_number">second number</string>
+    <string name="operator">operator</string>
+    <string name="delay_time_in_seconds">delay time</string>
+    <string name="gps">GPS</string>
+    <string name="calculate">calculate</string>
+    <string name="required_field">required field</string>
+    <string name="you_cant_divide_on_zero">you cant divide on zero</string>
+    <string name="select_math_operator">select math Operator</string>
+    <string name="question_added_successfully">question added successfully</string>
+    <string name="you_must_enable_device_location">enable location first</string>
+    <string name="default_notification_channel_id" translatable="false">math_question_task_default_channel</string>
+    <string name="default_notification_channel_name" translatable="false">math_question_task_news</string>
+    <string name="no_results" >No Questions yet </string>
+
+    <string name="problem_text" translatable="false">Question:- %s %s %s = %s</string>
+    <string name="location_text" translatable="false">Location:- (%s, %s)</string>
+    <string name="problem_number_text" translatable="false">Question Number:- %s</string>
+    <string name="delay_text" translatable="false">Delay Time:- %s seconds</string>
+</resources>

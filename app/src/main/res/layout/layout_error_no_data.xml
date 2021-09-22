@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_errorCase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivError"
+            android:layout_width="@dimen/padding_170"
+            android:layout_height="@dimen/padding_170"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_not_interested_24" />
+
+        <TextView
+            android:id="@+id/tvErrorBody_connection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/no_results"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_20" />
+
+
+    </LinearLayout>
+</layout>

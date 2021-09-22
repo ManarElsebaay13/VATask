@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<data>
+
+    <import type="android.view.View" />
+
+    <variable
+        name="viewModel"
+        type="eg.com.test.vatask.ui.questionsResultActivity.QuestionsResultViewModel" />
+</data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layoutLoader"
+            layout="@layout/layout_loader_shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:visibility="@{viewModel.isShowLoader()?View.VISIBLE : View.GONE}" />
+
+        <include
+            android:id="@+id/layoutNoData"
+            layout="@layout/layout_error_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:visibility="@{viewModel.isShowNoData()?View.VISIBLE : View.GONE}" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="@{!viewModel.isShowLoader() &amp;&amp; !viewModel.isShowNoData() ?View.VISIBLE : View.GONE}"
+            app:adapter="@{viewModel.recyclerQuestionAdapter}"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:spanCount="1" />
+    </RelativeLayout>
+    </layout>

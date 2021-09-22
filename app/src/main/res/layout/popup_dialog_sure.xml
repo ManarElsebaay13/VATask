@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="@dimen/font_size_10"
+        android:padding="@dimen/font_size_10"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtview_dialog_sure_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10"
+            android:gravity="center"
+            android:paddingStart="@dimen/padding_10"
+            android:paddingEnd="@dimen/padding_10"
+            android:text="@string/app_name"
+            style="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_size_16"
+            android:visibility="visible" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_15"
+            android:minHeight="@dimen/padding_100">
+
+            <TextView
+                android:id="@+id/txtview_dialog_sure_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:padding="@dimen/padding_10"
+                android:paddingStart="@dimen/padding_15"
+                android:paddingEnd="@dimen/padding_15"
+                android:text="xxxxxxxxxx"
+                android:textColor="@color/red"
+                android:textSize="@dimen/padding_20" />
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/layoutActions_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10"
+            android:layout_marginBottom="@dimen/padding_10"
+            android:gravity="end"
+            android:padding="@dimen/padding_10"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/btn_dialog_sure_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/padding_10"
+                android:text="cancel"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_18" />
+
+            <TextView
+                android:id="@+id/btn_dialog_sure_Submit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/padding_10"
+                android:text="ok"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_18" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_dialog_sure_Ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_16"
+            android:layout_marginEnd="@dimen/padding_16"
+            android:layout_marginBottom="@dimen/padding_16"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:padding="@dimen/padding_10"
+            android:text="ok"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_18" />
+
+    </LinearLayout>
+</layout>
